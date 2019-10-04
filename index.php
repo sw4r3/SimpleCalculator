@@ -67,14 +67,17 @@
                   $hasil = $_SESSION['bil1'] + $_SESSION['bilangan'];
                   session_unset();
                   echo $hasil;
+                  $_SESSION['bilangan']=$hasil;
                 }else if ($_SESSION['opera']=="-") {
                   $hasil = $_SESSION['bil1'] - $_SESSION['bilangan'];
                   session_unset();
                   echo $hasil;
+                  $_SESSION['bilangan']=$hasil;
                 }else if ($_SESSION['opera']=="/") {
                   $hasil = $_SESSION['bil1'] / $_SESSION['bilangan'];
                   session_unset();
                   echo $hasil;
+                  $_SESSION['bilangan']=$hasil;
                 }else if ($_SESSION['opera']=="*") {
                   $hasil = $_SESSION['bil1'] * $_SESSION['bilangan'];
                   session_unset();
